@@ -1,0 +1,201 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dadada;
+    color: #1c1e21;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+header {
+    background-color: #359;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.name{
+    padding: 0px 30px;
+}
+.nav-superior {
+background-color: #3b5998;
+padding: 30px;
+text-align: center;
+color: white;
+text-decoration: none;
+margin: 0 450px;
+
+}
+
+.nav-superior a {
+color: white;
+margin: 0 20px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.nav-superior a:hover {
+text-decoration: underline;
+}
+
+
+
+.perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.perfil .foto img {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.perfil .foto {
+    text-align: center;
+    min-width: 200px;
+}
+
+.perfil .info {
+    flex: 1;
+}
+
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas exactas */
+    gap: 20px;
+    padding: 1rem;
+  justify-items: center; /* centra las imágenes en su columna */
+}
+
+.foto-item {
+    text-align: center;
+}
+
+.foto-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-item p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    padding-top: 80px;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f5f6f7;
+    border-radius: 10px;
+}
+
+
+
+.card h2 {
+    color: #06080a;
+    margin-bottom: 10px;
+}
+
+
+img {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #359;
+    color: white;
+}
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #359;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #359;
+}
+
+
+
+
+
+
+
+
+
+
+

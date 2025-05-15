@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inscripción de Familiares</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <img src="images.png" alt="Facebook Logo" class="logo">
+    Formulario de Inscripción de Familiares
+  </header>
+
+  <main>
+    <h1>Formulario de Inscripción</h1>
+
+    <form method="post">
+      <label for="Nombre">Nombre:</label>
+      <input type="text" id="Nombre" name="Nombre" required>
+
+      <label for="segundonombre">Segundo Nombre:</label>
+      <input type="text" id="segundonombre" name="segundonombre">
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="segundoapellido">Segundo Apellido:</label>
+      <input type="text" id="segundoapellido" name="segundoapellido">
+
+      <label for="Age">Edad:</label>
+      <input type="number" id="Age" name="Age" min="1" max="100" required>
+
+      <label for="Fechadena">Fecha de nacimiento:</label>
+      <input type="date" id="Fechadena" name="Fechadena" required>
+
+      <label for="number">Teléfono:</label>
+      <input type="tel" id="number" name="number" pattern="[0-9]{10}" title="Digite el número de teléfono de 10 dígitos" required>
+
+      <label for="foto">Foto:</label>
+      <input type="file" id="foto" name="foto" accept="image/*">
+
+      <label>Sexo:</label>
+      <input type="radio" name="sexo" id="masculino" value="masculino">
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="sexo" id="femenino" value="femenino">
+      <label for="femenino">Femenino</label>
+      <input type="radio" name="sexo" id="otro" value="otro">
+      <label for="otro">Otro</label>
+
+      <label for="Correo">Correo Electrónico:</label>
+      <input type="email" name="Correo" id="Correo">
+
+      <label for="relation">Relación con usted:</label>
+      <select name="relation" id="relation" required>
+        <option value="padre">Padre</option>
+        <option value="madre">Madre</option>
+        <option value="hermano">Hermano</option>
+        <option value="hermana">Hermana</option>
+      </select>
+
+      <label for="sport">Intereses:</label>
+      <select name="sport[]" id="sport" multiple size="4">
+        <option value="futbol">Fútbol</option>
+        <option value="natacion">Natación</option>
+        <option value="baloncesto">Baloncesto</option>
+        <option value="golf">Golf</option>
+        <option value="tenis">Tenis</option>
+      </select>
+
+      <input type="submit" value="Registrar">
+    </form>
+  </main>
+
+</body>
+</html>
